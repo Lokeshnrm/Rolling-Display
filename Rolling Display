@@ -1,0 +1,13 @@
+#include <LiquidCrystal.h>
+
+LiquidCrystal lcd(12, 11, 5, 4, 3, 2);  // Change pin numbers accordingly
+
+void setup() {
+  lcd.begin(16, 2);  // Adjust based on your display specifications
+  lcd.print("Hello, World!");
+}
+
+void loop() {
+  lcd.scrollDisplayLeft();
+  delay(500);  // Adjust the delay for scrolling speed
+}
